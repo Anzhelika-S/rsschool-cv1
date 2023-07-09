@@ -10,14 +10,117 @@
       content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
-      src="styles.css"
-      href="#">
+      href="style.css">
     <title>Another FrontEnd Developer</title>
   </head>
   <body>
-    <nav></nav>
-    <section id="introduction">
-      <h1>Hi, I'm just another shitty developer</h1>
+    <nav>
+      <ul>
+        <li><a href="#main_information">Main Information</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+    <h1>Anzhelika's CV</h1>
+    <section id="main_information">
+      <h2>Anzhelika Silkina</h2>
+      <hr>
+      <h2 id="contacts">My contact info</h2>
+      <hr>
+      <div class="contacts">
+        <div><span class="bold">Tel./WA: </span>+7(977)951-95-00</div>
+        <div><span class="bold">E-mail: </span>anzhelikasilkina@yandex.ru</div>
+        <div><span class="bold">Telegram: </span>@anzhanz</div>
+        <div><span class="bold">Discord: </span>anzhelikas</div>
+        <div><span class="bold">Github: </span>Anzhelika-S</div>
+      </div>
+      <h2 id="about">About me:</h2>
+      <hr>
+      <div class="about">
+        <div class="description-container">
+          <div>Having studies at the Linguistic university, I have always been exposed to various languages, including programming languages, as my course was of Theoretical and Applied linguistics. Over the course of my studies I have been taught JavaScript, C#, C, and Python on numerous occasions, but it was only after the graduation that I realized how interestsing these languages could actually be. Since I rediscovered my interest in programming languages I started looking for opportunities to apply my knowledge and skills as well as improve on them. I'm a fast learner, a critical thinker, and a perfectionist to an extent.</div>
+          <img src="./img/user.jpg" alt="My photo" class="my-photo">
+        </div>
+        <div class="strength">
+          <span class="bold">My strength:</span>
+          <ul>
+              <li>Communicative skills</li>
+              <li>Perseverence</li>
+              <li>Not afraid to take on responsability</li>
+              <li>Able to understand the process from within</li>
+          </ul>
+        </div>
+      </div>
+      <h2 id="skills">Skills</h2>
+      <hr>
+      <div>
+        <ul>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Webpack</li>
+        </ul>
+      </div>
+      <h2 id="code">Code Examples</h2>
+      <hr>
+      <div>
+        <p><span class="bold">Discription</span> Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.</p>
+        <p>Note: a and b are not ordered!</p>
+        <p class="bold">Code:</p>
+        <pre>
+          <code>
+          function getSum(a, b) {
+            let sum = 0;
+            if(a &lt; b){ 
+              for(let i = a; i &lt;= b; i++) {
+                sum += i; 
+              }
+              return sum;
+            } else if(a > b){
+                for(let i = b; i &lt;= a; i++) {
+                sum += i; 
+              }
+              return sum;
+            } else {
+              return a;
+            } 
+          }
+          </code>
+        </pre>
+      </div>
+      <h2 id="experience">Experience and Projects</h2>
+      <hr>
+      <p>I have just started my journey in FrontEnd Development, so there's still not much to show.</p>
+      <ul class="education">
+        <li><a href="https://github.com/Anzhelika-S/rsschool-cv">RS School CV#1 Project</a></li>
+      </ul>
+      <h2 id="education">Education</h2>
+      <hr>
+      <ul>
+        <li>Moscow State Linguistic University, Theoretical and Applied Linguistics</li>
+        <li>Kata Academy, FrontEnd Development (JS, CSS, React)</li>
+      </ul>
+      <h2 id="languages">Languages</h2>
+      <hr>
+      <ul>
+        <li>Russian, native</li>
+        <li>English, fluent (~ C1)</li>
+        <li>German, conversational (~ B2)</li>
+        <li>Japaese, elementary (~ A1)</li>
+      </ul>
+      <i>Currently practicing English not only by teaching it to other people, but also living and communicating in English everyday in an English-speaking country</i>
     </section>
+    <footer>
+    <div><a href="https://github.com/Anzhelika-S">My GitHub Page</a></div>
+    <a href="https://rs.school/js/">
+    <img src="https://rs.school/images/rs_school_js.svg" alt="Course Logo" class="logo"></a>
+    </footer>
   </body>
 </html>
