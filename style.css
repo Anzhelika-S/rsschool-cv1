@@ -2,4 +2,63 @@ body {
 font-size: 14px;
 font-family: 'Times New Roman', Times, serif;
 background-color: azure;
+margin: 0 auto;
+width: 500px;
+padding-bottom: 20px;
+}
+
+nav>ul {
+display: flex;
+flex-direction: row;
+margin: 0 0 0 -3rem;
+position: fixed;
+list-style: none;
+gap: 1rem;
+background-color: rgba(252, 231, 229, 0.9);
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+h1 {
+padding: 3rem 0 0 0;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.description-container {
+display: flex;
+flex-direction: row;
+gap: 1rem;
+}
+
+.my-photo {
+height: 200px;
+border-radius: 15px;
+}
+
+pre {
+background-color: rgb(222, 222, 222);
+color: rgb(0, 0, 0);
+}
+
+.education > li > a, 
+footer > div > a{
+color: rgb(109, 109, 252)
+}
+
+footer {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+margin: 2rem 0;
+}
+
+.logo {
+height: 30px
 }
